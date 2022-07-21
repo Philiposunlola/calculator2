@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #1b332d;
+}
+
+.device{
+  width: 300px;
+  height: 100vh;
+  background-color: #000807;
+  margin: auto;
+}
+
+.screen_container{
+  width: 300px;
+  height: 70px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 375px;
+}
+
+#display{
+  color: #a2e9e3;
+  width: 280px;
+  height: 70px;
+  margin: 0;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: right;
+}
+
+.num_container{
+  width: 300px;
+  height: 375px;
+  margin: auto;
+  background-image: linear-gradient(to bottom right , #010a09 , #0e1e26);
+  position: absolute;
+  bottom: 0;
+}
+
+.first_row , .second_row , .third_row , .fourth_row , .fifth_row{
+  min-width: 300px;
+  height: 75px;
+  display: block;
+}
+
+.zero , .dot , .percentage , .plus , .one , .two , .three , .minus , .four , .five , .six , .multiply , .seven , .eight , .nine , .division{
+  width: 73px;
+  height: 73px;
+  border: 1px solid #000807;
+  display: block;
+}
+
+.dot , .two , .five , .eight{
+  margin-left: 75px;
+  margin-top: -75px;
+}
+
+.percentage , .three , .six , .nine , .equal{
+  margin-left: 150px;
+  margin-top: -75px;
+}
+
+.plus , .minus , .multiply , .division{
+  margin-left: 225px;
+  margin-top: -75px;
+  background-image: linear-gradient(to top left , #135b62 , #104e53);
+}
+
+.clear , .equal{
+  width: 148px;
+  height: 73px;
+  border: 1px solid #000807;
+  background-color: transparent;
+  display: block;
+}
+
+.equal{
+  background-image: linear-gradient(to top right , #2ab2a6 , #239287);
+}
+
+input{
+  display: block;
+  margin: auto;
+  color: #fefefe;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.sign{
+  font-size: 34px;
+  margin-top: 13px;
+}
+
+.num{
+  font-size: 18px;
+  margin-top: 26px;
+}

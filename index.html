@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">       
+         <title> Calculator </title>
+         <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="device">
+    <div class="screen_container">
+      <input type="text" id="display" disabled="disabled">
+    </div>
+    <div class="num_container">
+      <div class="first_row">
+        <div class="zero" onclick = "display.value += '0'">
+          <input type="button" value="0">
+        </div>
+        <div class="dot" onclick = "display.value += '.'">
+          <input type="button" value=".">
+        </div>
+        <div class="percentage" onclick = "display.value += '%'">
+          <input type="button" value="%">
+        </div>
+        <div class="plus" onclick = "display.value += '+'">
+          <input type="button" value="+" class="sign" >
+        </div>
+      </div>
+    
+      <div class="second_row">
+        <div class="one" onclick = "display.value += '1'">
+          <input type="button" value="1" class="num">
+        </div>
+        <div class="two" onclick = "display.value += '2'">
+          <input type="button" value="2" class="num">
+        </div>
+        <div class="three" onclick = "display.value += '3'">
+          <input type="button" value="3" class="num">
+        </div>
+        <div class="minus" onclick = "display.value += '-'">
+          <input type="button" value="-" class="sign">
+        </div>
+      </div>
+    
+      <div class="third_row">
+        <div class="four" onclick = "display.value += '4'">
+          <input type="button" value="4" class="num">
+        </div>
+        <div class="five" onclick = "display.value += '5'">
+          <input type="button" value="5" class="num">
+        </div>
+        <div class="six" onclick = "display.value += '6'">
+          <input type="button" value="6" class="num">
+        </div>
+        <div class="multiply" onclick = "display.value += '*'">
+          <input type="button" value="×" class="sign">
+        </div>
+      </div>
+    
+      <div class="fourth_row">
+        <div class="seven" onclick = "display.value += '7'">
+          <input type="button" value="7" class="num">
+        </div>
+        <div class="eight" onclick = "display.value += '8'">
+          <input type="button" value="8" class="num">
+        </div>
+        <div class="nine" onclick = "display.value += '9'">
+          <input type="button" value="9" class="num">
+        </div>
+        <div class="division" onclick = "display.value += '/'">
+          <input type="button" value="/">
+        </div>
+      </div>
+      
+      <div class="fifth_row">
+        <div class="clear" onclick = "display.value = ''">
+          <input type="button" value="C">
+        </div>
+        <div class="equal" onclick="display.value = eval(display.value)">
+          <input type="button" value="=" class="sign">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
